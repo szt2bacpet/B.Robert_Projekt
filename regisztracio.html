@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Űrlap validálás JavaScript példa</title>
+
+        <link rel="stylesheet" href="urlap.css" class="rel">
+    </head>
+    <body>
+
+        <main>
+            <div class="container">
+                <form id="form" class="form">
+                    <h2>Regisztráció</h2>
+                    <div class="form-control">
+                        <label for="username">Felhasználónév</label>
+                        <input type="text" id="username" placeholder="Add meg a felhasználónevet">
+                        <small>Hibaüzenet</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Add meg az email címet">
+                        <small>Hibaüzenet</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="birthdate">Születési dátum</label>
+                        <input
+                            type="text"
+                            id="birthdate"
+                            placeholder="Add meg a születési dátumot (ÉÉÉÉ-HH-NN)">
+                        <small>Hibaüzenet</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Jelszó</label>
+                        <input type="password" id="password" placeholder="Add meg a jelszót">
+                        <small>Hibaüzenet</small>
+                    </div>
+
+                    <button>Elküld</button>
+                </form>
+            </div>
+        </main>
+
+        <script src="urlap.js"></script>
+        <div id="result"></div>
+    </body>
+</html>

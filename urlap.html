@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="urlap.css" class="rel">
+        <title>Quiz Form</title>
+    </head>
+    <body>
+        <form id="quizForm">
+            <fieldset>
+                <legend>1. Feleletválasztó (1 helyes válasz)</legend>
+                <p>Milyen módon lehet egy JavaScript függvényből visszatérni az eredményekkel?</p><br>
+                <label>
+                    <input type="radio" name="kerdes1" value="A">
+                    return kulcsszóval
+                </label>
+                <label>
+                    <input type="radio" name="kerdes1" value="B">
+                    console.log() használatával
+                </label>
+                <label>
+                    <input type="radio" name="kerdes1" value="C">
+                    break utasítással
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Feleletválasztó (2 vagy több helyes válasz)</legend>
+                <p>Melyik kulcsszóval definiálhatunk változót a JavaScriptben?</p><br>
+                <label>
+                    <input type="checkbox" name="kerdes2" value="A">
+                    let
+                </label>
+                <label>
+                    <input type="checkbox" name="kerdes2" value="B">
+                    const
+                </label>
+                <label>
+                    <input type="checkbox" name="kerdes2" value="C">
+                    variable
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. Rövid szöveg</legend>
+                <p>Melyik kulcsszóval deklarálhatunk egy változót, amely csak a lokális
+                    hatáskörben érvényes?</p><br>
+                <label>
+                    <input type="text" name="kerdes3">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. Kifejtős</legend>
+                <p>Milyen kulcsszavakat használhatsz a JavaScriptben a változók deklarálásához
+                    és inicializálásához?</p><br>
+                <label>
+                    <textarea name="kerdes4"></textarea>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>5. Kiegészítendő</legend>
+
+                A JavaScriptben a boolean
+                <select name="kerdes5">
+                    <option>válassz</option>
+                    <option value="3">valós</option>
+                    <option value="2">talán</option>
+                    <option value="1">string</option>
+                    <option value="0">Igaz</option>
+                </select>
+
+                és
+                <select name="kerdes5.1">
+                    <option>válassz</option>
+                    <option value="3">valótlan</option>
+                    <option value="2">Hamis</option>
+                    <option value="1">int</option>
+                    <option value="0">vagy</option>
+                </select>
+                értékekkel térhet vissza.
+            </fieldset>
+
+            <fieldset>
+                <legend>6. Ellenőriz</legend>
+                <button type="button" onclick="checkAnswers()">Ellenőriz</button>
+            </fieldset>
+        </form>
+
+        <div id="result">
+            
+        </div>
+        <audio id="Zene">
+            <source src="y2mate.com - Fireboy and Watergirl OST 02  Adventure.mp3" type="audio/mpeg">
+        </audio>
+            
+        
+
+        <script src="tesztek.js"></script>
+    </body>
+</html>
