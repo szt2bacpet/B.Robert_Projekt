@@ -89,7 +89,7 @@ function getFieldName(input) {
         .slice(1);
 }
 
-//Event Listeners
+//Eseményfigyelők
 form.addEventListener('submit', function (e) {
     e.preventDefault();
 
