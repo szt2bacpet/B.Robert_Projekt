@@ -94,7 +94,6 @@ form.addEventListener('submit', function (e) {
     e.preventDefault();
 
     checkRequired([username, email, password]);
-    checkLength(username, 2, 15);
     checkEmail(email);
     checkBirthdate(birthdate);
 
