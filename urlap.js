@@ -23,7 +23,7 @@ function showSucces(input) {
 
 // Felhasználónév formátum ellenőrzése
 function checkUsername(input) {
-    const re = /^[A-Z][a-zA-Z]* [A-Z][a-zA-Z]*$/;
+    const re = /^([A-ZÁÉÍÓÖŐÚÜŰ][a-záéíóöőúüű]+ ){1}[A-ZÁÉÍÓÖŐÚÜŰ][a-záéíóöőúüű]+$/;
     if (re.test(input.value.trim())) {
         showSucces(input);
     } else {
