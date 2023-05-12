@@ -33,7 +33,7 @@ function checkUsername(input) {
 
 // Email formátum ellenőrzése
 function checkEmail(input) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]{2,4}$/;
     if (re.test(input.value.trim())) {
         showSucces(input);
     } else {
