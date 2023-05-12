@@ -65,7 +65,10 @@ function checkAnswers() {
         let count = 0;
 
         for (let i = 0; i < keywords.length; i++) {
-            if (answer4.includes(keywords[i])) {
+            const lowercaseKeyword = keywords[i].toLowerCase();
+            const lowercaseAnswer = answer4.toLowerCase();
+        
+            if (lowercaseAnswer.includes(lowercaseKeyword)) {
                 count += 1;
                 if (count >= 3) {
                     break;
